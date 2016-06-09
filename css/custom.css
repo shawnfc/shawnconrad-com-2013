@@ -1,0 +1,343 @@
+/*GENERAL STYLES======================================*/
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+section {
+	margin-bottom: 8%;
+}
+h1 {
+	color: #fff;
+	font-size: 4em;
+	text-shadow: 1px 1px 6px #666;
+	border-top: 2px solid #e3361f;
+	border-bottom: 2px solid #e3361f;
+	padding-bottom: 12px;
+}
+h4 {
+	text-align: center;
+}
+p {
+	color: #2d3449;
+	font-size: 2em;
+	background-color: rgba(255,255,255,0.85);
+	padding: 15px;
+	word-break: break-word;
+}
+#liveInfo-content {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border-bottom: 1px dotted #666;
+	color: #666;
+	font-size: .9em;
+	font-weight: normal;
+	padding: 1px 16px;
+	text-transform: uppercase;
+}
+a {
+	color: #FF3317;
+}
+/*a:hover {
+	color: #e3361f;
+}*/
+
+/*FEATHERLIGHT LIGHTBOX======================================*/
+.thumbnail {
+	padding: 0;
+	border: none;
+	display: inline;
+}
+.featherlight-next, .featherlight-previous {
+	display: none;
+}
+
+/*BACKGROUND IMAGES======================================*/
+img.bg {
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+@media screen and (max-width: 1024px) {/* Specific to this particular image */
+	img.bg {
+		left: 50%;
+		margin-left: -512px; /* 50% */
+	}
+}
+
+/*LOGO======================================*/
+.logo {
+	clear: both;
+	margin-top: 1%;
+}
+
+/*NAV======================================*/
+#MainNav li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 30px;
+}
+#MainNav li:first-child {
+    margin-left: 0px;
+}
+#MainNav li a {
+    text-decoration: none;
+    font-size: 1.6em;
+    padding: 1px 10px;
+    font-weight: 400;
+    color: #555;
+}
+#MainNav li a.currentPage {
+    color: #000;
+} 
+/*FOOTER======================================*/
+p.footerCopy {
+	font-size: 1em;
+	text-align: center;
+	background-color: transparent;
+	font-weight: 400;
+}
+#socialMedia {
+	margin-top: 10px;
+}
+
+/*HOME PAGE======================================*/
+.introCopy {
+	color: #2d3449;
+	font-size: 2.5em;
+	/*text-shadow: 1px 1px 2px #333;*/
+}
+
+/*ABOUT PAGE======================================*/
+h1.aboutPage {
+	color: #2d3449;
+	border-top: 2px solid #2d3449;
+	border-bottom: 2px solid #2d3449;
+	text-shadow: 1px 1px 15px #fff;
+}
+#familyPhoto {
+	float: left;
+	padding: 9px 20px 20px 0;
+}
+#other-info p {
+    min-height: 300px;
+    height: auto;
+}
+#overLay {
+	background-color: rgba(0,0,0,0.8);
+	height: 100%;
+	width: 100%;
+	z-index: 1000;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.nav-tabs > li > a {
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  font-weight: bold;
+  line-height: 1.42857;
+  margin-right: 2px;
+  text-transform: uppercase;
+}
+
+/*PORTFOLIO PAGE======================================*/
+img.portfolio_bg {
+	/* Set rules to fill background */
+	/*min-height: 100%;
+	 min-width: 1024px;*/
+
+	/* Set up proportionate scaling */
+	width: 14%;
+	height: auto;
+	/* Set up positioning */
+	position: fixed;
+	bottom: 0;
+	left: 10px;
+	z-index: 1000;
+	margin-bottom: 60px;
+}
+h1.portfolioPage {
+	color: #e3361f;
+	border-top: 2px solid #2d3449;
+	border-bottom: 2px solid #2d3449;
+	text-shadow: 0px 1px 2px #333;
+}
+.portfolioItem {
+	float: left;
+	margin: 0 0 40px 40px;
+}
+.thumbLift {
+	box-shadow: 0 0px 2px #999;
+}
+
+/*ANGULAR PORTFOLIO*************/
+.search {
+    background-color: #FF3317;
+    padding: 20px;
+    border-radius: 3px 3px 0 0;
+    color: #FBF7E4;
+}
+.search h2 {
+    font-size: 3em;
+    margin-top: 0;
+    color: #444;
+}
+.search label {
+    font-size: 1.5em;
+    color: #E7E8D1;
+    margin-left: 10px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.search input {
+    border-radius: 3px;
+    color: #666;
+    font-size: 1.5em;
+    padding: 5px;
+}
+.searchDropdown {
+    background-color: #424242;
+}
+.main {
+    background-color: #D3CEAA;
+    border-radius: 3px;
+    width: 90%;
+}
+.portfolioList {
+    padding: 20px;
+}
+.portfolioList li {
+    list-style: none;
+}
+.portfolio img {
+    width: 175px;
+    float: left;
+    border-radius: 3px;
+    margin: 20px;
+    box-shadow: 0 1px 2px #999;
+}
+.portfolio {
+    border-bottom: 1px solid #424242;
+    list-style: none;
+}
+.portfolio:last-child {
+    border-bottom: none;
+}
+.description {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.description h2 {
+    color: #424242;
+}
+.description p {
+    background: none;
+    font-size: 1.4em;
+    color: #424242;
+    padding-top: 0px;
+}
+.formgroup {
+    display:inline-block;
+    margin-top: 10px 0 0 10px;
+}
+
+/*CONTACT PAGE======================================*/
+.contactPage strong {
+	color: #435e6b;
+}
+h1.contactH1 {
+	color: #435e6b;
+	text-shadow: 0px 1px 25px #fff;
+	border-top: 2px solid #435e6b;
+	border-bottom: 2px solid #435e6b;
+}
+
+/*MEDIA QUERIES======================================*/
+#mobileMenuIcon {
+	display: none;
+}
+@media only screen and (max-width: 724px) {
+	/* phones */
+	/*MOBILE MENU ICON*/
+	#mobileMenuIcon {
+		display: inline;
+		position: absolute;
+		top: 6px;
+		right: 20px;
+		background-image: url('img/menuIcon.png');
+	}
+	#liveInfo {
+	    width: 85%;
+	}
+	#MainNav {
+		float: right;
+		margin-top: 50px;
+		display: none;
+	}
+	#MainNav li {
+		font-size: 2em;
+		display: block;
+		text-align: center;
+		margin-bottom: 3px;
+		text-transform: uppercase;
+	}
+	#MainNav li a {
+		background-color: transparent;
+		border-bottom: 1px solid #fff;
+	}
+    #MainNav li:first-child {
+        margin-left: 30px;
+    }
+	.bodyArea {
+		margin-bottom: 150px;
+	}
+	img.portfolio_bg {
+		margin-bottom: 103px;
+	}
+}
+
+@media (min-width: 724px) and (max-width: 991px) {
+	img.portfolio_bg {
+		margin-bottom: 104px;
+	}
+    .search {
+        margin-top: 20px;
+    }
+}
+@media (min-width: 480px) and (max-width: 724px) {
+    .search {
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 480px) {
+	/* SHAWN FULL IMAGE */
+	img.portfolio_bg {
+		margin-bottom: 124px;
+	}
+	h1 {
+		font-size: 2em;
+		padding-bottom: 6px;
+	}
+	p, .introCopy {
+		font-size: 1.8em;
+	}
+	address {
+		font-size: .8em;
+	}
+	#familyPhoto {
+		float: none;
+		text-align: center;
+	}
+    .search {
+        margin-top: 20px;
+    }
+}
+
+
